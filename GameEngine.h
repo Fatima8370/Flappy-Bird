@@ -3,6 +3,8 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Audio.hpp>
+#include "Menu.h"
+
 
 using namespace std;
 using namespace sf;
@@ -14,6 +16,8 @@ private:
 	const int screenX = 700, screenY = 1000;
 
 	RenderWindow window;
+
+
 
 public:
 
@@ -57,8 +61,12 @@ public:
 
 
 	void draw(RenderWindow& window) {
-		// draw game objects here
+
+
 	}
+
+
+
 
 
 

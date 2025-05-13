@@ -46,129 +46,55 @@ public:
 	void drawWin(RenderWindow& window){}
 
 
-	void setGameOver(bool gameOver) {
-		isGameOver = gameOver;
-	}
 
-	void setPause(bool pause) {
-		isPaused = pause;
-	}
+	/////////////////////////
+	// SETTERS AND GETTERS //
+	/////////////////////////
 
-	void setStart(bool start) {
-		isStart = start;
-	}
-
-	void setLevel(bool level) {
-		isLevel = level;
-	}
-
-	void setWin(bool win) {
-		isWin = win;
-	}
-
-	void setGame(bool game) {
-		isGame = game;
-	}
-
-	void setGameOverDraw(bool gameOverDraw) {
-		isGameOverDraw = gameOverDraw;
-	}
-
-	void setPauseDraw(bool pauseDraw) {
-		isPauseDraw = pauseDraw;
-	}
-
-	void setStartDraw(bool startDraw) {
-		isStartDraw = startDraw;
-	}
-
-	void setLevelDraw(bool levelDraw) {
-		isLevelDraw = levelDraw;
-	}
-
-	void setWinDraw(bool winDraw) {
-		isWinDraw = winDraw;
-	}
-
-	void setGameDraw(bool gameDraw) {
-		isGame = gameDraw;
-	}
-
-	bool getGameOver() {
-		return isGameOver;
-	}
-
-	bool getPause() {
-		return isPaused;
-	}
-
-	bool getStart() {
-		return isStart;
-	}
-
-	bool getLevel() {
-		return isLevel;
-	}
-
-	bool getWin() {
-		return isWin;
-	}
-
-	bool getGame() {
-		return isGame;
-	}
-
-	bool getGameOverDraw() {
-		return isGameOverDraw;
-	}
-
-	bool getPauseDraw() {
-		return isPauseDraw;
-	}
-
-	bool getStartDraw() {
-		return isStartDraw;
-	}
-
-	bool getLevelDraw() {
-		return isLevelDraw;
-	}
-
-	bool getWinDraw() {
-		return isWinDraw;
-	}
-
-	bool getGameDraw() {
-		return isGame;
-	}
-
-	void setFont(const string& fontPath) {
-		if (!font.loadFromFile(fontPath)) {
-			cerr << "Error loading font" << endl;
-		}
-		text.setFont(font);
-	}
-
-	void setText(const string& str, int size, Color color) {
-		text.setString(str);
-		text.setCharacterSize(size);
-		text.setFillColor(color);
-		text.setPosition(screenX / 2 - text.getGlobalBounds().width / 2, screenY / 2 - text.getGlobalBounds().height / 2);
-	}
-
-	void setTextPosition(float x, float y) {
-		text.setPosition(x, y);
-	}
-
-	void setTextColor(Color color) {
-		text.setFillColor(color);
-	}
-
-	void setTextSize(int size) {
-		text.setCharacterSize(size);
-	}
+	void setGameOver(bool gameOver) { isGameOver = gameOver; }
+	void setPause(bool pause) { isPaused = pause; }
+	void setStart(bool start) { isStart = start; }
+	void setLevel(bool level) { isLevel = level; }
+	void setWin(bool win) { isWin = win; }
+	void setGame(bool game) { isGame = game; }
+	void setGameOverDraw(bool gameOverDraw) { isGameOverDraw = gameOverDraw; }
+	void setPauseDraw(bool pauseDraw) { isPauseDraw = pauseDraw; }
+	void setStartDraw(bool startDraw) { isStartDraw = startDraw; }
+	void setLevelDraw(bool levelDraw) { isLevelDraw = levelDraw; }
+	void setWinDraw(bool winDraw) { isWinDraw = winDraw; }
+	void setGameDraw(bool gameDraw) { isGame = gameDraw; }
 
 
+	bool getGameOver() { return isGameOver; }
+	bool getPause() { return isPaused; }
+	bool getStart() { return isStart; }
+	bool getLevel() { return isLevel; }
+	bool getWin() { return isWin; }
+	bool getGame() { return isGame;	}
+	bool getGameOverDraw() { return isGameOverDraw; }
+	bool getPauseDraw() { return isPauseDraw; }
+	bool getStartDraw() { return isStartDraw; }
+	bool getLevelDraw() { return isLevelDraw; }
+	bool getWinDraw() { return isWinDraw; }
+	bool getGameDraw() { return isGame; }
 
 
+	///////////////
+	// FUNCTIONS //
+	///////////////
+
+	void setPauseScreen () {}
+	void setGameOverScreen() {}
+	void setStartScreen() {}
+	void setLevelScreen() {}
+	void setWinScreen() {}
+	void setGameScreen() {}
+	void setGameOverText() {}
+	void setPauseText() {}
+	void setStartText() {}
+	void setLevelText() {}
+	void setWinText() {}
+	void setGameText() {}
+		
+	
 };
