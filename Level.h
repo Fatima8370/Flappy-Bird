@@ -19,6 +19,8 @@ private:
 	bool isLevelComplete;
 	bool isLevelFailed;
 
+	UI ui;
+
 
 public:
 

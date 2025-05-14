@@ -29,6 +29,8 @@ class UI {
 
 public:
 	
+	UI() {}
+
 	UI(int x, int y): screenX(x), screenY(y) {}
 	
 	~UI(){}
@@ -79,9 +81,9 @@ public:
 	bool getGameDraw() { return isGame; }
 
 
-	///////////////
-	// FUNCTIONS //
-	///////////////
+	///////////////////
+	//// FUNCTIONS ////
+	///////////////////
 
 	void setPauseScreen () {}
 	void setGameOverScreen() {}

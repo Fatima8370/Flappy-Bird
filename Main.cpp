@@ -9,7 +9,7 @@ using namespace sf;
 
 int main() {
 
-	RenderWindow window(VideoMode(700, 1000), "SFML Window");
+	RenderWindow window(VideoMode(411, 730), "SFML Window");
 
 	CircleShape shape(50);
 

@@ -13,7 +13,7 @@ class GameEngine {
 
 private:
 
-	const int screenX = 700, screenY = 1000;
+	const int screenX = 411, screenY = 730;
 
 	RenderWindow window;
 
